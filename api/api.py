@@ -21,7 +21,7 @@ class handler(BaseHTTPRequestHandler):
                 poke_mon.append(moves)
             message = str(poke_mon)
         else:
-            message = ' please type a pokemon to see their moves'
+            message = 'please type a pokemon to see their moves'
         
         self.send_response(200)
         self.send_header('Content-type', 'text/plain')
