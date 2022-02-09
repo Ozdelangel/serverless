@@ -17,7 +17,7 @@ class handler(BaseHTTPRequestHandler):
                 pocket_mon = poke_data['results'][0]
                 poke_mon.append(pocket_mon)
 
-            message = str(poke_mon)
+            message = str(poke_mon) 
         else:
             message = 'please type in a pokemon to get url'
         self.send_response(200)
